@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author noemie
- *
- */
-module PierreSabre {
-}
