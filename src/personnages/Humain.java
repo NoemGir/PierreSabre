@@ -4,8 +4,8 @@ public class Humain {
 	private String nom;
 	private String boisson;
 	private int argent;
-	private int nbConnaissance;
-	private Humain[] memoire = new Humain[30];
+	protected int nbConnaissance;
+	protected Humain[] memoire = new Humain[30];
 	
 	public Humain(String nom, String boisson, int argent) {
 		this.nom = nom;
@@ -82,9 +82,6 @@ public class Humain {
 				texte += memoire[i].getNom() + ", ";
 			}
 			parler("Je connais beaucoup de monde dont : " + texte);
-		}
-		else {
-			parler("Je n'ai pas d'amis...");
 		}
 	}
 }
