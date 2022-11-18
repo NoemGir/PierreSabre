@@ -44,7 +44,7 @@ public class Traitre extends Samourai {
 			memoire[pif].gagnerArgent(don);
 			perdreArgent(don);
 			String nom = getNom();
-			memoire[pif].parler("Merci " + nom + ". Vous �tes quelqu'un de bien.");
+			memoire[pif].parler("Merci " + nom + ". Vous etes quelqu'un de bien.");
 			if (niveauTraitrise > 1) {
 				niveauTraitrise--;
 			}
