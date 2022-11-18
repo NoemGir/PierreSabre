@@ -20,7 +20,7 @@ public class HistoireTP5 {
 		roro.listerConnaissance();
 		yaku.listerConnaissance();
 		
-		Samourai akimoto = new Samourai("Miyamoto", "Akimoto", "saké", 80);
+		Samourai akimoto = new Samourai("Miyamoto", "Akimoto", "sake", 80);
 		akimoto.faireConnaissanceAvec(marco);
 		akimoto.listerConnaissance();
 		akimoto.boire("du the");
@@ -28,6 +28,13 @@ public class HistoireTP5 {
 		Traitre masako = new Traitre("Miyamoto", "Masako", "whisky", 100);
 		masako.faireLeGentil();
 		masako.ranconner(kumi);
+		masako.ranconner(chonin);
+		masako.ranconner(marco);
+		akimoto.faireConnaissanceAvec(masako);
+		masako.ranconner(kumi);
+		masako.faireConnaissanceAvec(yaku);
+		masako.faireLeGentil();
+		masako.faireConnaissanceAvec(roro);
 		
 	}
 }
